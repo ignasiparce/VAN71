@@ -3,405 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Propuesta · Rosorta Abogados</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Rosorta Abogados · VAN71 Proposal</title>
+    <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="./print.css" media="print" />
   </head>
   <body>
-    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-
-    <div class="app-shell">
-      <aside class="rail no-print" aria-label="Índice de la propuesta">
-        <p class="rail__kicker">VAN71 Studio</p>
-        <h1 class="rail__title">Rosorta Abogados</h1>
-        <nav class="rail__nav" aria-label="Navegación principal">
-          <a href="#cover">Cover</a>
-          <a href="#abstract">Abstract</a>
-          <a href="#overview">Overview</a>
-          <a href="#core">Core</a>
-          <a href="#services">Services</a>
-          <a href="#timeline">Timeline</a>
-          <a href="#investment">Investment</a>
-          <a href="#terms">Terms</a>
-          <a href="#next-steps">Next Steps</a>
+    <div class="progress-bar" data-progress aria-hidden="true"><span></span></div>
+    <main class="page layout-with-rail">
+      <aside class="navigation-rail no-print" data-rail aria-hidden="false">
+        <p class="label">NavigationRail</p>
+        <h3>Rosorta Abogados</h3>
+        <nav aria-label="Índice de propuesta">
+          <a data-spy-link href="#hero">Hero</a>
+          <a data-spy-link href="#abstract">Abstract</a>
+          <a data-spy-link href="#overview">Overview</a>
+          <a data-spy-link href="#core">Core Service</a>
+          <a data-spy-link href="#services">Services</a>
+          <a data-spy-link href="#timeline">Timeline</a>
+          <a data-spy-link href="#investment">Investment</a>
+          <a data-spy-link href="#terms">Terms</a>
+          <a data-spy-link href="#next">Next steps</a>
         </nav>
-        <button id="printBtn" class="btn" type="button">Print / Export A4</button>
+        <button class="button" data-print type="button">Print A4</button>
       </aside>
 
-      <main class="main" id="mainContent">
-        <header class="hero section" id="cover" data-section>
-          <div class="section-header">
-            <p class="label">COVER</p>
-            <div class="rule-divider"></div>
+      <div>
+        <header class="section" id="hero">
+          <button class="button drawer-toggle no-print" data-rail-toggle type="button">Sections</button>
+          <p class="label">Commercial proposal</p>
+          <h1>Rosorta Abogados</h1>
+          <p class="hero-copy">Strategic communication / Branding / Social / Web</p>
+          <div class="grid mt-6">
+            <article class="card col-3"><p class="label">Client</p><p>Rosorta Abogados</p></article>
+            <article class="card col-3"><p class="label">Sector</p><p>Legal services</p></article>
+            <article class="card col-3"><p class="label">Date</p><p>2025</p></article>
+            <article class="card col-3"><p class="label">Prepared by</p><p>VAN71 Studio</p></article>
           </div>
-          <p class="hero__kicker">Commercial Proposal</p>
-          <h2>Propuesta — Rosorta Abogados</h2>
-          <p class="hero__subtitle">Strategic Communication / Branding / Social / Web</p>
-          <div class="meta-card card">
-            <div>
-              <p class="label">Client</p>
-              <p>Rosorta Abogados</p>
-            </div>
-            <div>
-              <p class="label">Sector</p>
-              <p>Legal services</p>
-            </div>
-            <div>
-              <p class="label">Date</p>
-              <p>2025</p>
-            </div>
-            <div>
-              <p class="label">Prepared by</p>
-              <p>VAN71 Studio</p>
-            </div>
-          </div>
-          <div class="hero__actions no-print">
-            <button id="printBtnSecondary" class="btn" type="button">Print / Export A4</button>
-            <button id="openNav" class="btn btn--ghost" type="button">Open sections</button>
-          </div>
+          <p class="no-print mt-4"><button class="button" data-print type="button">Print / Export A4</button></p>
         </header>
 
-        <section class="section" id="abstract" data-section>
-          <div class="section-header">
-            <p class="label">ABSTRACT</p>
-            <h2>Executive Abstract</h2>
-            <div class="rule-divider"></div>
-          </div>
-          <article class="card abstract-card">
-            <p>
-              Rosorta Abogados comunica hoy desde un enfoque tradicional, con una imagen fragmentada y un
-              posicionamiento poco definido. El objetivo de esta propuesta es transformar ese punto de partida en una
-              presencia legal contemporánea, clara y confiable. La aproximación integra estrategia de comunicación,
-              sistema visual y ejecución por canales para alinear todo el recorrido de marca. El resultado esperado es
-              una identidad consistente, una narrativa diferenciadora y una operación de contenidos que sostenga valor
-              a corto y largo plazo.
-            </p>
-            <div class="outcomes">
-              <p class="label">Outcomes</p>
-              <div class="chip-group">
-                <span class="chip">Clear positioning</span>
-                <span class="chip">Consistent identity</span>
-                <span class="chip">Channel execution</span>
-              </div>
-            </div>
+        <section class="section" id="abstract">
+          <div class="section-header"><p class="label">SectionHeader</p><h2>Executive abstract</h2><div class="rule-divider"></div></div>
+          <article class="card">
+            <p>Rosorta Abogados comunica desde un enfoque tradicional con identidad fragmentada. Esta propuesta plantea un sistema editorial que ordena su posicionamiento legal, acelera la captación de casos y da continuidad operativa con métricas claras, narrativa coherente y presencia digital escalable.</p>
           </article>
         </section>
 
-        <section class="section" id="overview" data-section>
-          <div class="section-header">
-            <p class="label">01</p>
-            <h2>Strategic Overview</h2>
-            <div class="rule-divider"></div>
+        <section class="section" id="overview">
+          <div class="section-header"><p class="label">Strategic overview</p><h2>Current diagnosis</h2><div class="rule-divider"></div></div>
+          <div class="grid">
+            <article class="card col-4"><h3>Percepción dispersa</h3><p class="small">Mensajes y piezas visuales sin un sistema editorial consistente.</p></article>
+            <article class="card col-4"><h3>Presencia digital mínima</h3><p class="small">Canales sin estructura de contenido ni narrativa de autoridad.</p></article>
+            <article class="card col-4"><h3>Oportunidad de diferenciación</h3><p class="small">Existe espacio para posicionar la firma como referencia confiable y moderna.</p></article>
           </div>
-          <div class="cards-grid cards-grid--3">
+        </section>
+
+        <section class="section" id="core">
+          <div class="section-header"><p class="label">Core service</p><h2>Strategic communication engine</h2><div class="rule-divider"></div></div>
+          <article class="card">
+            <p>Diseñamos un núcleo de comunicación que integra dirección estratégica, identidad verbal y visual, pauta editorial para redes, y experiencia web enfocada en conversiones. El resultado es un sistema operativo de marca capaz de sostener crecimiento y reputación.</p>
+          </article>
+        </section>
+
+        <section class="section" id="services">
+          <div class="section-header"><p class="label">Accordion</p><h2>Service modules</h2><div class="rule-divider"></div></div>
+          <div class="no-print inline-actions mb-4">
+            <button class="button underline" data-expand-all type="button">Expand all</button>
+            <button class="button underline" data-collapse-all type="button">Collapse all</button>
+          </div>
+          <div class="accordion">
+            <article class="accordion-item">
+              <button class="accordion-trigger" data-accordion-trigger aria-expanded="true" aria-controls="panel-1" type="button"><span>Brand Strategy</span><span class="label">Módulo 01</span></button>
+              <div class="accordion-panel" id="panel-1"><div class="inner"><p>Definición de posicionamiento, narrativa de especialidades y arquitectura de mensajes para casos prioritarios.</p></div></div>
+            </article>
+            <article class="accordion-item">
+              <button class="accordion-trigger" data-accordion-trigger aria-expanded="false" aria-controls="panel-2" type="button"><span>Identity System</span><span class="label">Módulo 02</span></button>
+              <div class="accordion-panel" id="panel-2" hidden><div class="inner"><p>Refinamiento de tono verbal, componentes visuales y criterios de uso para mantener consistencia en documentos y canales.</p></div></div>
+            </article>
+            <article class="accordion-item">
+              <button class="accordion-trigger" data-accordion-trigger aria-expanded="false" aria-controls="panel-3" type="button"><span>Social Editorial Plan</span><span class="label">Módulo 03</span></button>
+              <div class="accordion-panel" id="panel-3" hidden><div class="inner"><p>Calendario de contenidos, formatos de captación y guías de publicación orientadas a autoridad profesional.</p></div></div>
+            </article>
+            <article class="accordion-item">
+              <button class="accordion-trigger" data-accordion-trigger aria-expanded="false" aria-controls="panel-4" type="button"><span>Web Presence</span><span class="label">Módulo 04</span></button>
+              <div class="accordion-panel" id="panel-4" hidden><div class="inner"><p>Landing legal modular con estructura SEO, pruebas de mensajes y formularios de contacto accesibles.</p></div></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="section-header"><p class="label">Timeline</p><h2>Implementation plan</h2><div class="rule-divider"></div></div>
+          <div class="timeline-tabs no-print">
+            <button class="button active" data-timeline-btn data-target="phase-1" type="button">Phase 1</button>
+            <button class="button" data-timeline-btn data-target="phase-2" type="button">Phase 2</button>
+            <button class="button" data-timeline-btn data-target="phase-3" type="button">Phase 3</button>
+          </div>
+          <div class="timeline">
+            <article class="timeline-panel active" id="phase-1" data-timeline-panel>
+              <p class="label">Semanas 1–2</p><h3>Diagnóstico y enfoque</h3><p class="small">Auditoría de comunicación, definición de objetivos y mapa de prioridades por servicio.</p>
+            </article>
+            <article class="timeline-panel" id="phase-2" data-timeline-panel>
+              <p class="label">Semanas 3–5</p><h3>Diseño de sistema</h3><p class="small">Producción de lineamientos de marca y set inicial de contenidos para activación digital.</p>
+            </article>
+            <article class="timeline-panel" id="phase-3" data-timeline-panel>
+              <p class="label">Semanas 6–8</p><h3>Implementación y ajuste</h3><p class="small">Lanzamiento de web, publicaciones, medición y optimización con foco en captación.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="investment">
+          <div class="section-header"><p class="label">PricingCards</p><h2>Investment</h2><div class="rule-divider"></div></div>
+          <label class="chip soft no-print mb-4">
+            <input data-pricing-toggle type="checkbox" /> Mostrar valor trimestral
+          </label>
+          <div class="pricing-grid">
             <article class="card">
-              <p class="label">Current situation</p>
-              <h3>Imagen tradicional y fragmentada</h3>
-              <p>
-                Rosorta Abogados comunica hoy desde un enfoque tradicional, con una imagen fragmentada y un
-                posicionamiento poco definido.
-              </p>
-              <div class="rule-divider"></div>
-              <p class="muted">Key note: La percepción de valor diferencial se diluye en un mercado legal competitivo.</p>
+              <p class="label">Base</p><h3>Strategic Essentials</h3>
+              <p class="price"><span data-price-monthly data-price-yearly="€3.300">€1.200</span> <span data-price-period>/mes</span></p>
+              <p class="small">Dirección, narrativa y seguimiento quincenal.</p>
             </article>
             <article class="card">
-              <p class="label">Opportunity</p>
-              <h3>Diferenciar con claridad narrativa</h3>
-              <p>
-                La oportunidad está en diferenciar la firma a través de claridad narrativa, consistencia visual y una
-                comunicación estructurada en todos los puntos de contacto.
-              </p>
-              <div class="rule-divider"></div>
-              <p class="muted">Key note: Coherencia entre canales para construir recuerdo y confianza.</p>
+              <p class="label">Growth</p><h3>Brand + Social</h3>
+              <p class="price"><span data-price-monthly data-price-yearly="€4.800">€1.700</span> <span data-price-period>/mes</span></p>
+              <p class="small">Incluye producción editorial para redes y coordinación de campaña.</p>
             </article>
             <article class="card">
-              <p class="label">Strategic direction</p>
-              <h3>Despacho moderno, cercano y con autoridad</h3>
-              <p>
-                La dirección estratégica propone posicionar a Rosorta como un despacho moderno, cercano y con
-                autoridad, construyendo una identidad coherente entre discurso, estética y experiencia digital.
-              </p>
-              <div class="rule-divider"></div>
-              <p class="muted">Key note: Enfoque escalable en narrativa, sistema visual y presencia web.</p>
+              <p class="label">Full</p><h3>Communication System</h3>
+              <p class="price"><span data-price-monthly data-price-yearly="€6.900">€2.400</span> <span data-price-period>/mes</span></p>
+              <p class="small">Estrategia, identidad, social y web con reporte ejecutivo mensual.</p>
             </article>
           </div>
         </section>
 
-        <section class="section" id="core" data-section>
-          <div class="section-header">
-            <p class="label">02</p>
-            <h2>Strategic Communication &amp; Positioning</h2>
-            <div class="rule-divider"></div>
-          </div>
-          <div class="core-grid card">
-            <article>
-              <h3>What it is</h3>
-              <p>
-                Este servicio es la base de toda la propuesta. Desde aquí se define el criterio estratégico que ordena
-                branding, contenidos y presencia web.
-              </p>
-              <h3>Why it matters</h3>
-              <p>
-                Permite alinear decisiones de marca y comunicación con objetivos de negocio para sostener una
-                presencia sólida, legible y escalable.
-              </p>
-            </article>
-            <article>
-              <h3>What’s included</h3>
-              <ul class="checklist">
-                <li><span class="chip">Diagnosis</span><span>Diagnosis</span></li>
-                <li><span class="chip">Positioning</span><span>Brand positioning</span></li>
-                <li><span class="chip">Strategy</span><span>Communication strategy</span></li>
-                <li><span class="chip">Narrative</span><span>Narrative definition</span></li>
-                <li><span class="chip">Direction</span><span>Image direction</span></li>
-              </ul>
-            </article>
-          </div>
-          <aside class="callout card">
-            <p class="label">Foundation</p>
-            <p>This is the foundation across all modules.</p>
-          </aside>
+        <section class="section" id="terms">
+          <div class="section-header"><p class="label">Terms</p><h2>Operational terms</h2><div class="rule-divider"></div></div>
+          <table class="table">
+            <thead><tr><th>Condición</th><th>Detalle</th></tr></thead>
+            <tbody>
+              <tr><td>Inicio</td><td>50% a la firma y 50% a los 30 días.</td></tr>
+              <tr><td>Validez</td><td>Esta propuesta es válida durante 30 días naturales.</td></tr>
+              <tr><td>Revisiones</td><td>Hasta dos rondas por bloque estratégico y creativo.</td></tr>
+              <tr><td>Propiedad intelectual</td><td>Transferencia una vez completado el pago total.</td></tr>
+            </tbody>
+          </table>
         </section>
 
-        <section class="section" id="services" data-section>
-          <div class="section-header">
-            <p class="label">03</p>
-            <h2>Services</h2>
-            <div class="rule-divider"></div>
-          </div>
-          <div class="services-controls no-print">
-            <button id="toggleAll" class="btn btn--ghost" type="button" aria-pressed="false">Expand all</button>
-          </div>
-          <div class="accordion" aria-label="Servicios activos">
-            <article class="accordion-item card" data-accordion-item>
-              <h3>
-                <button
-                  class="accordion-trigger"
-                  id="acc-branding-btn"
-                  aria-expanded="true"
-                  aria-controls="acc-branding-panel"
-                  type="button"
-                >
-                  <span>Branding &amp; Corporate Identity</span>
-                  <span class="chips"><span class="chip">Active</span><span class="chip">Setup</span></span>
-                  <span class="chevron" aria-hidden="true"></span>
-                </button>
-              </h3>
-              <div class="accordion-panel is-open" id="acc-branding-panel" role="region" aria-labelledby="acc-branding-btn">
-                <div class="accordion-panel__grid">
-                  <div>
-                    <p class="label">Deliverables</p>
-                    <ul><li>Logo refinement</li><li>Color system</li><li>Typography</li><li>Visual guidelines</li></ul>
-                  </div>
-                  <div>
-                    <p class="label">Cadence</p>
-                    <p>Semanal en fase de diseño; validaciones quincenales con equipo cliente.</p>
-                  </div>
-                  <div>
-                    <p class="label">Outputs</p>
-                    <p>Sistema visual, manual breve y archivos listos para uso digital.</p>
-                  </div>
-                  <div>
-                    <p class="label">Dependencies</p>
-                    <p>Acceso a activos existentes y feedback consolidado por ronda.</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="accordion-item card" data-accordion-item>
-              <h3>
-                <button
-                  class="accordion-trigger"
-                  id="acc-social-btn"
-                  aria-expanded="false"
-                  aria-controls="acc-social-panel"
-                  type="button"
-                >
-                  <span>Social Media Management</span>
-                  <span class="chips"><span class="chip">Active</span><span class="chip">Ongoing</span></span>
-                  <span class="chevron" aria-hidden="true"></span>
-                </button>
-              </h3>
-              <div class="accordion-panel" id="acc-social-panel" role="region" aria-labelledby="acc-social-btn">
-                <div class="accordion-panel__grid">
-                  <div>
-                    <p class="label">Deliverables</p>
-                    <ul><li>Content strategy</li><li>Visual direction</li><li>Monthly calendar</li><li>Post creation guidelines</li></ul>
-                  </div>
-                  <div>
-                    <p class="label">Cadence</p>
-                    <p>Ritmo mensual con planificación y producción semanal por bloques.</p>
-                  </div>
-                  <div>
-                    <p class="label">Outputs</p>
-                    <p>Calendario editorial, piezas publicables y lineamientos de tono.</p>
-                  </div>
-                  <div>
-                    <p class="label">Dependencies</p>
-                    <p>Acceso a casos, aprobaciones internas y materiales de respaldo.</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="accordion-item card" data-accordion-item>
-              <h3>
-                <button
-                  class="accordion-trigger"
-                  id="acc-landing-btn"
-                  aria-expanded="false"
-                  aria-controls="acc-landing-panel"
-                  type="button"
-                >
-                  <span>Landing / Web Presence</span>
-                  <span class="chips"><span class="chip">Active</span><span class="chip">Setup</span></span>
-                  <span class="chevron" aria-hidden="true"></span>
-                </button>
-              </h3>
-              <div class="accordion-panel" id="acc-landing-panel" role="region" aria-labelledby="acc-landing-btn">
-                <div class="accordion-panel__grid">
-                  <div>
-                    <p class="label">Deliverables</p>
-                    <ul><li>Website concept</li><li>UX structure</li><li>Design</li><li>Development (HTML)</li><li>Deployment</li></ul>
-                  </div>
-                  <div>
-                    <p class="label">Cadence</p>
-                    <p>Sprints semanales entre estructura, diseño y desarrollo.</p>
-                  </div>
-                  <div>
-                    <p class="label">Outputs</p>
-                    <p>Landing funcional, contenidos estructurados y checklist de publicación.</p>
-                  </div>
-                  <div>
-                    <p class="label">Dependencies</p>
-                    <p>Hosting, accesos técnicos y aprobación de contenidos finales.</p>
-                  </div>
-                </div>
-              </div>
-            </article>
+        <section class="section" id="next">
+          <div class="section-header"><p class="label">Next steps</p><h2>Decision and activation</h2><div class="rule-divider"></div></div>
+          <div class="card">
+            <ol>
+              <li>Aprobación de alcance y paquete de inversión.</li>
+              <li>Reunión kickoff y entrega de materiales base.</li>
+              <li>Activación del cronograma con entregables semanales.</li>
+            </ol>
           </div>
         </section>
-
-        <section class="section" id="timeline" data-section>
-          <div class="section-header">
-            <p class="label">04</p>
-            <h2>Timeline</h2>
-            <div class="rule-divider"></div>
-          </div>
-          <div class="timeline card">
-            <div class="timeline-tabs" role="tablist" aria-label="Phases">
-              <button role="tab" id="phase-tab-1" aria-selected="true" aria-controls="phase-panel-1" class="timeline-tab">Phase 1 Strategy <span>Week 1–2</span></button>
-              <button role="tab" id="phase-tab-2" aria-selected="false" aria-controls="phase-panel-2" class="timeline-tab">Phase 2 Branding <span>Week 2–4</span></button>
-              <button role="tab" id="phase-tab-3" aria-selected="false" aria-controls="phase-panel-3" class="timeline-tab">Phase 3 Implementation <span>Week 4–6</span></button>
-            </div>
-            <div class="timeline-panels">
-              <article id="phase-panel-1" role="tabpanel" aria-labelledby="phase-tab-1" class="timeline-panel is-active">
-                <h3>Goals</h3>
-                <p>Definir diagnóstico, posicionamiento y narrativa de marca.</p>
-                <h3>Key actions</h3>
-                <p>Discovery, arquitectura de mensajes y dirección comunicacional.</p>
-                <h3>Validation checkpoint</h3>
-                <p>Aprobación estratégica para activar diseño y ejecución.</p>
-              </article>
-              <article id="phase-panel-2" role="tabpanel" aria-labelledby="phase-tab-2" class="timeline-panel" hidden>
-                <h3>Goals</h3>
-                <p>Construir identidad visual coherente con la propuesta de valor.</p>
-                <h3>Key actions</h3>
-                <p>Refinamiento de logo, sistema tipográfico y reglas de uso.</p>
-                <h3>Validation checkpoint</h3>
-                <p>Validación de sistema visual y consistencia de marca.</p>
-              </article>
-              <article id="phase-panel-3" role="tabpanel" aria-labelledby="phase-tab-3" class="timeline-panel" hidden>
-                <h3>Goals</h3>
-                <p>Implementar presencia digital y activar operación de canales.</p>
-                <h3>Key actions</h3>
-                <p>Diseño/desarrollo landing, setup social y lineamientos operativos.</p>
-                <h3>Validation checkpoint</h3>
-                <p>Salida a producción y plan de iteración inicial.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="investment" data-section>
-          <div class="section-header">
-            <p class="label">05</p>
-            <h2>Investment</h2>
-            <div class="rule-divider"></div>
-          </div>
-          <div class="pricing-controls no-print" role="group" aria-label="Toggle pricing">
-            <button class="btn toggle-btn is-active" data-pricing-view="oneoff" type="button">One-off</button>
-            <button class="btn toggle-btn" data-pricing-view="monthly" type="button">Monthly</button>
-          </div>
-          <div class="cards-grid pricing-grid">
-            <article class="card pricing-card" data-type="oneoff">
-              <p class="label">One-off</p>
-              <h3>Strategic Setup</h3>
-              <p class="amount">2.500€</p>
-            </article>
-            <article class="card pricing-card" data-type="oneoff">
-              <p class="label">One-off</p>
-              <h3>Branding</h3>
-              <p class="amount">3.000€</p>
-            </article>
-            <article class="card pricing-card" data-type="oneoff">
-              <p class="label">One-off</p>
-              <h3>Landing</h3>
-              <p class="amount">1.800€</p>
-            </article>
-            <article class="card pricing-card" data-type="monthly">
-              <p class="label">Monthly</p>
-              <h3>Social Media</h3>
-              <p class="amount">1.200€/month</p>
-              <p class="muted">Setup is paid once before recurring operation.</p>
-            </article>
-          </div>
-          <div class="pricing-total card">
-            <p class="label">Total first month</p>
-            <p class="amount">8.500€</p>
-            <p class="muted">Includes setup + all one-off modules + first monthly retainer.</p>
-          </div>
-        </section>
-
-        <section class="section" id="terms" data-section>
-          <div class="section-header">
-            <p class="label">06</p>
-            <h2>Terms</h2>
-            <div class="rule-divider"></div>
-          </div>
-          <ul class="terms card">
-            <li>Project duration estimada: entre 6 y 9 semanas según validaciones.</li>
-            <li>Payment conditions: 50% inicio, 30% en fase intermedia, 20% al cierre.</li>
-            <li>Scope flexibility: ajustes puntuales permitidos; ampliaciones se cotizan por separado.</li>
-          </ul>
-        </section>
-
-        <section class="section" id="next-steps" data-section>
-          <div class="section-header">
-            <p class="label">07</p>
-            <h2>Next Steps</h2>
-            <div class="rule-divider"></div>
-          </div>
-          <div class="cards-grid cards-grid--3">
-            <article class="card step-card"><p class="label">01</p><h3>Approve scope &amp; modules</h3><p>Approval de propuesta y alcance.</p></article>
-            <article class="card step-card"><p class="label">02</p><h3>Kick-off call + access</h3><p>Definición de start date y equipo responsable.</p></article>
-            <article class="card step-card"><p class="label">03</p><h3>Start Phase 1</h3><p>Kick-off estratégico y activación de Phase 1.</p></article>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <div id="mobileDrawer" class="drawer no-print" aria-hidden="true">
-      <div class="drawer__panel">
-        <div class="drawer__header">
-          <p class="label">Sections</p>
-          <button id="closeNav" class="btn btn--ghost" type="button">Close</button>
-        </div>
-        <nav class="drawer__nav" aria-label="Navegación móvil"></nav>
       </div>
-    </div>
-
-    <script src="./app.js"></script>
+    </main>
+    <script src="../../app.js" defer></script>
   </body>
 </html>

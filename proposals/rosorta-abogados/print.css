@@ -1,110 +1,79 @@
 @page {
   size: A4;
-  margin: 14mm;
+  margin: 14mm 12mm;
 }
 
 :root {
-  --print-line: #b9b9b9;
+  --fg: #000;
+  --line: rgba(0, 0, 0, 0.25);
 }
 
 * {
-  box-shadow: none !important;
-  text-shadow: none !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 body {
-  color: #000;
   background: #fff;
-  font-size: 10.8pt;
-  line-height: 1.4;
-}
-
-body::before {
-  content: "Rosorta Abogados — Proposal — VAN71";
-  display: block;
-  margin-bottom: 5mm;
-  font-size: 9pt;
-  letter-spacing: 0.04em;
-}
-
-body::after {
-  content: "Page " counter(page);
-  position: fixed;
-  bottom: 4mm;
-  right: 0;
-  font-size: 8pt;
+  color: #000;
 }
 
 .no-print,
-.progress,
-.drawer,
-.hero__actions,
-.pricing-controls,
-.services-controls {
+.progress-bar,
+.navigation-rail,
+.drawer-toggle,
+button,
+input {
   display: none !important;
 }
 
-.app-shell,
-.main,
-.section,
-.core-grid,
-.cards-grid,
-.pricing-grid,
-.meta-card,
-.accordion-panel__grid {
-  display: block !important;
-  max-width: 100% !important;
-  gap: 0 !important;
-  padding: 0 !important;
+.page {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.layout-with-rail {
+  display: block;
 }
 
 .section {
-  margin-bottom: 7mm;
-}
-
-#core,
-#services,
-#timeline,
-#investment,
-#terms {
   break-before: page;
   page-break-before: always;
-}
-
-h2 {
-  font-size: 22pt !important;
-}
-
-.hero h2 {
-  font-size: 27pt !important;
-}
-
-.card,
-.accordion-item,
-.timeline,
-.pricing-total,
-.terms {
-  border: 1px solid var(--print-line) !important;
-  padding: 4mm !important;
-  margin-bottom: 3mm !important;
   break-inside: avoid;
   page-break-inside: avoid;
-  background: #fff !important;
-  transform: none !important;
+  padding-block: 10mm;
+}
+
+#hero {
+  break-before: auto;
+  page-break-before: auto;
+}
+
+h1 { font-size: 42pt; }
+h2 { font-size: 24pt; }
+h3 { font-size: 14pt; }
+p, li, td, th { font-size: 11pt; }
+
+.card,
+.table,
+.timeline,
+.pricing-grid > * {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  border-color: rgba(0, 0, 0, 0.35) !important;
 }
 
 .accordion-panel {
-  display: block !important;
   max-height: none !important;
   overflow: visible !important;
 }
 
-.chevron {
-  display: none;
+.accordion-panel[hidden] {
+  display: block !important;
 }
 
-p,
-li {
+p {
   widows: 3;
   orphans: 3;
 }
