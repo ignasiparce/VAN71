@@ -1,0 +1,110 @@
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+:root {
+  --print-line: #b9b9b9;
+}
+
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+body {
+  color: #000;
+  background: #fff;
+  font-size: 10.8pt;
+  line-height: 1.4;
+}
+
+body::before {
+  content: "Rosorta Abogados — Proposal — VAN71";
+  display: block;
+  margin-bottom: 5mm;
+  font-size: 9pt;
+  letter-spacing: 0.04em;
+}
+
+body::after {
+  content: "Page " counter(page);
+  position: fixed;
+  bottom: 4mm;
+  right: 0;
+  font-size: 8pt;
+}
+
+.no-print,
+.progress,
+.drawer,
+.hero__actions,
+.pricing-controls,
+.services-controls {
+  display: none !important;
+}
+
+.app-shell,
+.main,
+.section,
+.core-grid,
+.cards-grid,
+.pricing-grid,
+.meta-card,
+.accordion-panel__grid {
+  display: block !important;
+  max-width: 100% !important;
+  gap: 0 !important;
+  padding: 0 !important;
+}
+
+.section {
+  margin-bottom: 7mm;
+}
+
+#core,
+#services,
+#timeline,
+#investment,
+#terms {
+  break-before: page;
+  page-break-before: always;
+}
+
+h2 {
+  font-size: 22pt !important;
+}
+
+.hero h2 {
+  font-size: 27pt !important;
+}
+
+.card,
+.accordion-item,
+.timeline,
+.pricing-total,
+.terms {
+  border: 1px solid var(--print-line) !important;
+  padding: 4mm !important;
+  margin-bottom: 3mm !important;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  background: #fff !important;
+  transform: none !important;
+}
+
+.accordion-panel {
+  display: block !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.chevron {
+  display: none;
+}
+
+p,
+li {
+  widows: 3;
+  orphans: 3;
+}
