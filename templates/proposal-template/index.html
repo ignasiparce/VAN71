@@ -92,5 +92,95 @@
 
     <script src="data.js"></script>
     <script src="script.js"></script>
+  <body class="presentation-mode">
+    <header class="topbar no-print">
+      <div class="brand">
+        <strong id="proposalTitle">Proposal</strong>
+        <span id="proposalMeta"></span>
+      </div>
+      <nav class="topnav" aria-label="Navegación interna">
+        <a href="#overview">Overview</a>
+        <a href="#scope">Scope</a>
+        <a href="#deliverables">Deliverables</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#terms">Terms</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button id="modeToggle" type="button">Modo impresión A4</button>
+        <button id="printBtn" type="button">Export/Print</button>
+      </div>
+    </header>
+
+    <main class="deck" id="proposalRoot">
+      <section id="overview" class="block card">
+        <h2>Overview</h2>
+        <p id="overviewText"></p>
+        <div class="grid two">
+          <article class="mini-card">
+            <h3>Cliente</h3>
+            <p id="clientName"></p>
+          </article>
+          <article class="mini-card">
+            <h3>Proyecto</h3>
+            <p id="projectName"></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="scope" class="block card">
+        <h2>Scope</h2>
+        <ul id="scopeList" class="list"></ul>
+      </section>
+
+      <section id="deliverables" class="block card">
+        <h2>Deliverables</h2>
+        <div id="deliverablesGrid" class="grid three"></div>
+      </section>
+
+      <section id="timeline" class="block card">
+        <h2>Timeline</h2>
+        <div id="timelineList" class="timeline"></div>
+      </section>
+
+      <section id="pricing" class="block card highlight">
+        <h2>Pricing</h2>
+        <div class="grid two">
+          <article>
+            <h3>Presupuesto total</h3>
+            <p id="budget" class="price"></p>
+          </article>
+          <article>
+            <h3>Condiciones de pago</h3>
+            <p id="paymentTerms"></p>
+          </article>
+        </div>
+        <div id="pricingNotes"></div>
+      </section>
+
+      <section id="terms" class="block card">
+        <h2>Terms</h2>
+        <ul id="termsList" class="list"></ul>
+      </section>
+
+      <section id="contact" class="block card">
+        <h2>Contact</h2>
+        <div class="grid two">
+          <article>
+            <h3>Proveedor</h3>
+            <p id="vendorName"></p>
+            <p id="vendorEmail"></p>
+          </article>
+          <article>
+            <h3>Contacto cliente</h3>
+            <p id="clientContact"></p>
+            <p id="clientEmail"></p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
   </body>
 </html>
