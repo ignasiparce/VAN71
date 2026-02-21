@@ -1,0 +1,180 @@
+:root {
+  --bg: #f3f2ef;
+  --surface: #ffffff;
+  --ink: #18181b;
+  --muted: #6b7280;
+  --line: #e4e4e7;
+  --brand: #1d4ed8;
+  --accent: #dbeafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1.2fr 2fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.topnav {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.deck {
+  max-width: 1100px;
+  margin: 1.2rem auto 3rem;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.highlight {
+  border-color: #93c5fd;
+  background: linear-gradient(180deg, #eff6ff 0%, #fff 60%);
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mini-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.phase {
+  border-left: 4px solid var(--brand);
+  padding: 0.35rem 0 0.35rem 0.75rem;
+}
+
+.phase .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.price {
+  font-size: 2rem;
+  margin: 0.25rem 0 0;
+}
+
+.print-mode .deck {
+  max-width: 210mm;
+}
+
+.print-mode .card {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    position: static;
+    grid-template-columns: 1fr;
+  }
+
+  .grid.two,
+  .grid.three {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .deck {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    gap: 6mm;
+  }
+
+  .card {
+    border-radius: 0;
+    border: 1px solid #d4d4d8;
+    box-shadow: none;
+  }
+}

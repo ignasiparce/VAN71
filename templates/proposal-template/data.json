@@ -1,0 +1,64 @@
+{
+  "proposal": {
+    "title": "Propuesta de Rediseño Web",
+    "date": "2026-02-10"
+  },
+  "client": {
+    "name": "Acme Corp",
+    "contact": "Laura Gómez",
+    "email": "laura.gomez@acme.com"
+  },
+  "vendor": {
+    "name": "Studio Norte",
+    "email": "hola@studionorte.com"
+  },
+  "project": {
+    "name": "Website Refresh Q2",
+    "overview": "Modernizar la presencia digital de la marca con enfoque en conversión, narrativa y performance.",
+    "scope": [
+      "Auditoría UX/UI del sitio actual",
+      "Arquitectura de información",
+      "Diseño de páginas clave",
+      "Implementación front-end"
+    ],
+    "deliverables": [
+      "Documento de estrategia",
+      "Sitemap y user flows",
+      "Sistema visual y componentes",
+      "Plantillas listas para producción",
+      "Guía editorial de contenidos",
+      "Checklist de QA"
+    ],
+    "phases": [
+      {
+        "name": "Kickoff + Discovery",
+        "duration": "Semana 1",
+        "details": "Reunión inicial, definición de objetivos, benchmark y recopilación de activos."
+      },
+      {
+        "name": "Diseño",
+        "duration": "Semana 2-4",
+        "details": "Propuesta visual, iteraciones y validación de stakeholders."
+      },
+      {
+        "name": "Build",
+        "duration": "Semana 5-6",
+        "details": "Implementación, testing funcional y optimización inicial."
+      }
+    ]
+  },
+  "pricing": {
+    "currency": "EUR",
+    "budget": 24000,
+    "paymentTerms": "40% inicio, 40% aprobación de diseño, 20% entrega",
+    "notes": [
+      "Validez de propuesta: 20 días",
+      "No incluye gastos de terceros ni licencias"
+    ]
+  },
+  "terms": [
+    "El cliente provee feedback consolidado por fase.",
+    "Incluye hasta 2 iteraciones por entregable principal.",
+    "Solicitudes fuera del alcance se estiman y aprueban por separado."
+  ]
+}
