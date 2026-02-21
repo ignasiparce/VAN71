@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposal Template</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Navegación de secciones">
+        <h1 class="sidebar__title">Proposal</h1>
+        <nav>
+          <a href="#cover">Cover</a>
+          <a href="#strategic-overview">Strategic Overview</a>
+          <a href="#core-service">Core Service</a>
+          <a href="#services">Services</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#investment">Investment</a>
+          <a href="#terms">Terms</a>
+          <a href="#next-steps">Next Steps</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section id="cover" class="card cover">
+          <p class="eyebrow">Proposal</p>
+          <h2 id="cover-title">Propuesta para cliente</h2>
+          <p id="cover-subtitle">Fecha</p>
+        </section>
+
+        <section id="strategic-overview" class="card">
+          <h2>Strategic Overview</h2>
+          <p>
+            Este documento presenta una propuesta editorial minimal para alinear
+            objetivos estratégicos, alcance y ejecución de servicios.
+          </p>
+        </section>
+
+        <section id="core-service" class="card">
+          <h2>Core Service</h2>
+          <div class="grid-2">
+            <article class="mini-card">
+              <h3>Servicio principal</h3>
+              <p id="core-service-name"></p>
+            </article>
+            <article class="mini-card">
+              <h3>Resultado esperado</h3>
+              <p>
+                Implementación estructurada con entregables claros y medición de
+                impacto.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="services" class="card">
+          <h2>Services</h2>
+          <div id="services-accordion" class="accordion" aria-label="Servicios activos"></div>
+        </section>
+
+        <section id="timeline" class="card">
+          <h2>Timeline</h2>
+          <ul id="timeline-list" class="timeline-list"></ul>
+        </section>
+
+        <section id="investment" class="card">
+          <h2>Investment</h2>
+          <div class="grid-2" id="investment-grid"></div>
+          <p class="total" id="investment-total"></p>
+        </section>
+
+        <section id="terms" class="card">
+          <h2>Terms</h2>
+          <ul>
+            <li>Validez de propuesta: 30 días.</li>
+            <li>Pago: 50% inicio, 50% cierre.</li>
+            <li>Incluye hasta 2 rondas de ajustes por entregable.</li>
+          </ul>
+        </section>
+
+        <section id="next-steps" class="card">
+          <h2>Next Steps</h2>
+          <ol>
+            <li>Aprobación de alcance y presupuesto.</li>
+            <li>Firma de acuerdo y kickoff.</li>
+            <li>Inicio de ejecución según timeline acordado.</li>
+          </ol>
+        </section>
+      </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
