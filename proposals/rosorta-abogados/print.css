@@ -25,49 +25,38 @@ main {
 }
 
 .container,
-.proposal-layout {
+.proposal-layout,
+.proposal-main {
   width: 100% !important;
   display: block !important;
 }
 
 .section,
 .card,
-.table,
-.accordion,
-.accordion__content {
+.module-list,
+.table {
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
-#scope,
-#timeline,
-#investment,
-#terms {
+#methodology,
+#setup,
+#calendar,
+#report,
+#investment {
   break-before: page;
   page-break-before: always;
-}
-
-#cover {
-  break-before: auto;
-  page-break-before: auto;
-}
-
-.accordion__content[hidden] {
-  display: block !important;
-}
-
-.accordion__trigger {
-  margin-bottom: 0.4rem;
 }
 
 p,
 li,
 td,
 th {
-  font-size: 10.5pt;
+  font-size: 10.5pt !important;
 }
 
-p {
+p,
+li {
   widows: 3;
   orphans: 3;
 }
