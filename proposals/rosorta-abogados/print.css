@@ -1,11 +1,6 @@
 @page {
   size: A4;
-  margin: 14mm 12mm;
-}
-
-:root {
-  --fg: #000;
-  --line: rgba(0, 0, 0, 0.25);
+  margin: 14mm;
 }
 
 * {
@@ -19,58 +14,57 @@ body {
 }
 
 .no-print,
-.progress-bar,
-.navigation-rail,
-.drawer-toggle,
-button,
-input {
+.topbar,
+.quick-index,
+button {
   display: none !important;
 }
 
-.page {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+main {
+  padding: 0 !important;
 }
 
-.layout-with-rail {
-  display: block;
+.container,
+.proposal-layout {
+  width: 100% !important;
+  display: block !important;
 }
 
-.section {
-  break-before: page;
-  page-break-before: always;
+.section,
+.card,
+.table,
+.accordion,
+.accordion__content {
   break-inside: avoid;
   page-break-inside: avoid;
-  padding-block: 10mm;
 }
 
-#hero {
+#scope,
+#timeline,
+#investment,
+#terms {
+  break-before: page;
+  page-break-before: always;
+}
+
+#cover {
   break-before: auto;
   page-break-before: auto;
 }
 
-h1 { font-size: 42pt; }
-h2 { font-size: 24pt; }
-h3 { font-size: 14pt; }
-p, li, td, th { font-size: 11pt; }
-
-.card,
-.table,
-.timeline,
-.pricing-grid > * {
-  break-inside: avoid;
-  page-break-inside: avoid;
-  border-color: rgba(0, 0, 0, 0.35) !important;
-}
-
-.accordion-panel {
-  max-height: none !important;
-  overflow: visible !important;
-}
-
-.accordion-panel[hidden] {
+.accordion__content[hidden] {
   display: block !important;
+}
+
+.accordion__trigger {
+  margin-bottom: 0.4rem;
+}
+
+p,
+li,
+td,
+th {
+  font-size: 10.5pt;
 }
 
 p {

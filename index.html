@@ -3,43 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAN71 · Hub</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>VAN71</title>
+    <link rel="stylesheet" href="./assets/van71-ui.css" />
+    <style>
+      .hero { margin-bottom: 1.2rem; }
+      .hero p { margin: 0.55rem 0 0; max-width: 52ch; }
+      .clients .card { text-decoration: none; display: block; }
+    </style>
   </head>
   <body>
-    <div class="progress-bar" data-progress aria-hidden="true"><span></span></div>
-    <main class="page">
-      <header class="section" id="hub">
-        <p class="label">Hub</p>
-        <h1>VAN71</h1>
-        <p class="hero-copy">Creative Strategy / Brand / Communication</p>
-      </header>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">VAN71</div>
+        <nav aria-label="Principal">
+          <a data-scroll href="#clients">Clients</a>
+          <a href="mailto:hello@van71.studio">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-      <section class="section" aria-labelledby="routes-title">
-        <div class="section-header">
-          <p class="label">Navigation</p>
-          <h2 id="routes-title">System entry points</h2>
-          <div class="rule-divider"></div>
-        </div>
-        <div class="link-grid">
-          <a class="card" href="./landing/index.html">
-            <p class="label">01</p>
-            <h3>Landing</h3>
-            <p class="small">Posicionamiento principal de VAN71 Studio.</p>
-          </a>
-          <a class="card" href="./proposals/index.html">
-            <p class="label">02</p>
-            <h3>Proposals</h3>
-            <p class="small">Índice de propuestas comerciales y documentos editoriales.</p>
-          </a>
-          <article class="card">
-            <p class="label">03</p>
-            <h3>Future Work</h3>
-            <p class="small">Espacio reservado para nuevas páginas con el mismo sistema visual.</p>
-          </article>
-        </div>
-      </section>
+    <main>
+      <div class="container">
+        <section class="section hero" id="top">
+          <p class="label">Hub</p>
+          <h1>VAN71</h1>
+          <p class="muted">Creative Strategy, Brand and Communication</p>
+          <p><strong>Contact:</strong> <a href="mailto:hello@van71.studio">hello@van71.studio</a></p>
+        </section>
+
+        <section class="section clients" id="clients" data-section>
+          <p class="label">Clients</p>
+          <div class="grid">
+            <a class="card" style="grid-column: span 6" href="./proposals/rosorta-abogados/">
+              <p class="badge">Proposal</p>
+              <h2 style="margin-top: 0.7rem">Rosorta Abogados</h2>
+              <p class="muted">Open proposal document</p>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
-    <script src="./app.js" defer></script>
+
+    <script src="./assets/van71-ui.js" defer></script>
   </body>
 </html>
