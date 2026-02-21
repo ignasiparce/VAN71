@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rosorta Abogados · VAN71 Proposal</title>
-    <link rel="stylesheet" href="../../assets/van71-ui.css" />
+    <link rel="stylesheet" href="../../assets/van71-core.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./print.css" media="print" />
   </head>
   <body>
     <header class="topbar no-print">
       <div class="topbar__inner">
-        <div class="brand">VAN71</div>
+        <p class="brand">VAN71</p>
         <nav aria-label="Principal">
           <a href="../../index.html">Clients</a>
           <a href="mailto:hello@van71.studio">Contact</a>
@@ -21,200 +21,160 @@
 
     <main>
       <div class="container proposal-layout">
-        <aside class="quick-index no-print card">
-          <p class="label">Index</p>
-          <nav>
-            <a data-scroll data-index-link href="#setup">Setup</a>
-            <a data-scroll data-index-link href="#scope">Scope</a>
-            <a data-scroll data-index-link href="#timeline">Timeline</a>
-            <a data-scroll data-index-link href="#investment">Investment</a>
-            <a data-scroll data-index-link href="#terms">Terms</a>
+        <aside class="card quick-index no-print">
+          <p class="label">Contents</p>
+          <nav class="toc" aria-label="Table of contents">
+            <a data-scroll data-index-link href="#objective">1. Objective</a>
+            <a data-scroll data-index-link href="#methodology">2. Methodology</a>
+            <a data-scroll data-index-link href="#setup">3. Setup</a>
+            <a data-scroll data-index-link href="#calendar">4. Calendar</a>
+            <a data-scroll data-index-link href="#report">5. Report</a>
+            <a data-scroll data-index-link href="#investment">6. Investment</a>
           </nav>
         </aside>
 
-        <div>
-          <section class="section card cover" data-section id="cover">
+        <div class="proposal-main">
+          <section class="section card cover" id="cover" data-section>
             <p class="label">Proposal</p>
             <h1>Rosorta Abogados</h1>
-            <p class="muted">Communication, Brand and Digital Presence Plan</p>
+            <p class="muted">Communication, Brand and Digital Presence</p>
             <div class="meta-row">
-              <div><p class="label">Date</p><p>April 2026</p></div>
-              <div><p class="label">Prepared by</p><p>VAN71</p></div>
+              <div>
+                <p class="label">Date</p>
+                <p>April 2026</p>
+              </div>
+              <div>
+                <p class="label">Prepared by</p>
+                <p>VAN71</p>
+              </div>
             </div>
             <div class="actions no-print">
-              <button class="button button--accent" data-print type="button">Print / Export PDF (A4)</button>
-              <a class="button" href="mailto:hello@van71.studio">Contact</a>
+              <button class="btn" data-print type="button">Guardar como PDF</button>
+              <a class="btn" href="mailto:hello@van71.studio">Contact</a>
             </div>
           </section>
 
-          <section class="section card" data-section id="setup">
-            <p class="label">Setup & Positioning</p>
-            <h2>Where we are and where we move next</h2>
-            <div class="grid compact-grid">
-              <article class="card tone" style="grid-column: span 6">
-                <h3>Current state</h3>
-                <ul>
-                  <li>Message appears fragmented across channels.</li>
-                  <li>Visual identity feels inconsistent in daily execution.</li>
-                  <li>Digital presence does not yet support conversion goals.</li>
-                </ul>
+          <section class="section card" id="objective" data-section>
+            <div class="section-head compact">
+              <p class="label">01 · Objective</p>
+              <h2>Build a consistent communication system</h2>
+            </div>
+            <ul>
+              <li>Clarify Rosorta's positioning for high-trust legal services.</li>
+              <li>Unify brand and communication output across channels.</li>
+              <li>Improve lead quality through structured digital presence.</li>
+            </ul>
+          </section>
+
+          <section class="section card" id="methodology" data-section>
+            <div class="section-head compact">
+              <p class="label">02 · Methodology</p>
+              <h2>Four-part operating model</h2>
+            </div>
+            <div class="grid split-grid">
+              <article class="card unit" style="grid-column: span 6">
+                <p class="label">A</p>
+                <h3>Diagnosis</h3>
+                <p class="muted">Audit of messaging, assets and channel performance.</p>
               </article>
-              <article class="card tone" style="grid-column: span 6">
-                <h3>Objectives</h3>
-                <ul>
-                  <li>Clarify and standardize brand narrative.</li>
-                  <li>Increase trust signals and lead quality.</li>
-                  <li>Build a repeatable communication system.</li>
-                </ul>
+              <article class="card unit" style="grid-column: span 6">
+                <p class="label">B</p>
+                <h3>System</h3>
+                <p class="muted">Narrative pillars, tone rules and identity standards.</p>
+              </article>
+              <article class="card unit" style="grid-column: span 6">
+                <p class="label">C</p>
+                <h3>Activation</h3>
+                <p class="muted">Publishing cadence, templates and conversion layer.</p>
+              </article>
+              <article class="card unit" style="grid-column: span 6">
+                <p class="label">D</p>
+                <h3>Optimization</h3>
+                <p class="muted">Monthly measurement, insights and iteration.</p>
               </article>
             </div>
-            <article class="card positioning">
-              <h3>Positioning statement</h3>
-              <p>Rosorta is positioned as a precise, modern and trustworthy legal partner for complex matters, supported by a clear communication system and a disciplined visual language.</p>
-            </article>
-            <article class="card tone">
-              <h3>How we'll do it</h3>
-              <ul>
-                <li>Define narrative pillars and service architecture.</li>
-                <li>Unify identity rules for every output.</li>
-                <li>Deploy a practical monthly content cadence.</li>
-                <li>Launch a conversion-focused web layer.</li>
-              </ul>
-            </article>
           </section>
 
-          <section class="section" data-section id="scope">
-            <p class="label">Scope (Modules)</p>
-            <div class="accordion card" data-accordion>
-              <button class="accordion__trigger" aria-expanded="true" aria-controls="module-1">
-                <strong>Communication Strategy (Core)</strong><span>Core module</span>
-              </button>
-              <div class="accordion__content" id="module-1">
-                <ul>
-                  <li>Communication diagnosis and message hierarchy.</li>
-                  <li>Audience and case-type communication map.</li>
-                  <li>Core narrative pillars and tone guidelines.</li>
-                  <li>Editorial calendar structure (monthly).</li>
-                  <li>KPI framework for awareness and conversion.</li>
-                </ul>
-                <p><strong>Output:</strong> Strategy deck, messaging framework, and editorial plan.</p>
-                <p><strong>Dependencies:</strong> Service priorities, past communication materials, and access to current channels.</p>
-              </div>
+          <section class="section card" id="setup" data-section>
+            <div class="section-head compact">
+              <p class="label">03 · Setup</p>
+              <h2>Core service modules</h2>
             </div>
-
-            <div class="accordion card" data-accordion>
-              <button class="accordion__trigger" aria-expanded="true" aria-controls="module-2">
-                <strong>Branding & Corporate Identity</strong><span>One-off module</span>
-              </button>
-              <div class="accordion__content" id="module-2">
-                <ul>
-                  <li>Visual system refinement and typography rules.</li>
-                  <li>Logo lockups and basic usage guide.</li>
-                  <li>Color and document style standards.</li>
-                  <li>Templates for proposals and social posts.</li>
-                  <li>Consistency checklist for internal use.</li>
-                </ul>
-                <p><strong>Output:</strong> Mini brand system + editable templates package.</p>
-                <p><strong>Dependencies:</strong> Existing assets, legal naming confirmation, and approval rounds.</p>
-              </div>
-            </div>
-
-            <div class="accordion card" data-accordion>
-              <button class="accordion__trigger" aria-expanded="true" aria-controls="module-3">
-                <strong>Social Media Management</strong><span>Monthly module</span>
-              </button>
-              <div class="accordion__content" id="module-3">
-                <ul>
-                  <li>Monthly content planning and production workflow.</li>
-                  <li>Post copywriting and visual adaptation.</li>
-                  <li>Publishing cadence and channel hygiene.</li>
-                  <li>Community response protocol.</li>
-                  <li>Monthly performance report.</li>
-                </ul>
-                <p><strong>Output:</strong> Monthly content package + report.</p>
-                <p><strong>Dependencies:</strong> Service updates, spokesperson input, and approval SLA.</p>
-              </div>
-            </div>
-
-            <div class="accordion card" data-accordion>
-              <button class="accordion__trigger" aria-expanded="true" aria-controls="module-4">
-                <strong>Landing / Web</strong><span>One-off module</span>
-              </button>
-              <div class="accordion__content" id="module-4">
-                <ul>
-                  <li>Information architecture for key services.</li>
-                  <li>Landing wireframe and content structure.</li>
-                  <li>Visual UI aligned with brand system.</li>
-                  <li>Conversion cues (contact, trust, CTA).</li>
-                  <li>Basic SEO setup and analytics hooks.</li>
-                </ul>
-                <p><strong>Output:</strong> Production-ready landing page.</p>
-                <p><strong>Dependencies:</strong> Hosting access, legal copy validation, and final service priorities.</p>
-              </div>
+            <div class="module-list">
+              <article class="module-row">
+                <h3>Communication Strategy</h3>
+                <p class="muted">Diagnosis, narrative architecture and editorial calendar.</p>
+              </article>
+              <article class="module-row">
+                <h3>Branding & Corporate Identity</h3>
+                <p class="muted">Visual rules, templates and consistency controls.</p>
+              </article>
+              <article class="module-row">
+                <h3>Social Media Management</h3>
+                <p class="muted">Monthly planning, production and publication support.</p>
+              </article>
+              <article class="module-row">
+                <h3>Landing / Web</h3>
+                <p class="muted">Conversion-oriented landing structure and deployment.</p>
+              </article>
             </div>
           </section>
 
-          <section class="section card" data-section id="timeline">
-            <p class="label">Timeline</p>
-            <h2>Execution plan</h2>
+          <section class="section card" id="calendar" data-section>
+            <div class="section-head compact">
+              <p class="label">04 · Calendar</p>
+              <h2>Execution timeline</h2>
+            </div>
             <table class="table">
               <thead>
-                <tr><th>Phase</th><th>Duration</th><th>Key outputs</th></tr>
+                <tr><th>Phase</th><th>Duration</th><th>Output</th></tr>
               </thead>
               <tbody>
-                <tr><td>Phase 1 · Setup</td><td>Week 1</td><td>Diagnosis, positioning and roadmap</td></tr>
-                <tr><td>Phase 2 · System Build</td><td>Weeks 2–3</td><td>Identity refinements, templates, content framework</td></tr>
-                <tr><td>Phase 3 · Activation</td><td>Weeks 4–5</td><td>Social rollout + landing launch</td></tr>
-                <tr><td>Phase 4 · Optimization</td><td>Ongoing monthly</td><td>Monitoring, reporting and iterative improvements</td></tr>
+                <tr><td>Phase 1 · Setup</td><td>Week 1</td><td>Diagnosis and roadmap</td></tr>
+                <tr><td>Phase 2 · System Build</td><td>Weeks 2–3</td><td>Identity and communication framework</td></tr>
+                <tr><td>Phase 3 · Activation</td><td>Weeks 4–5</td><td>Social rollout + landing</td></tr>
+                <tr><td>Phase 4 · Optimization</td><td>Monthly</td><td>Reports and improvements</td></tr>
               </tbody>
             </table>
           </section>
 
-          <section class="section card" data-section id="investment">
-            <p class="label">Investment</p>
-            <h2>Pricing structure</h2>
+          <section class="section card" id="report" data-section>
+            <div class="section-head compact">
+              <p class="label">05 · Report</p>
+              <h2>Monthly reporting scope</h2>
+            </div>
+            <ul>
+              <li>Content and channel performance by KPI.</li>
+              <li>Lead quality signals and conversion observations.</li>
+              <li>Priority actions for next monthly cycle.</li>
+            </ul>
+          </section>
+
+          <section class="section card" id="investment" data-section>
+            <div class="section-head compact">
+              <p class="label">06 · Investment</p>
+              <h2>Commercial structure</h2>
+            </div>
             <table class="table">
               <thead>
                 <tr><th>Concept</th><th>Type</th><th>Amount</th></tr>
               </thead>
               <tbody>
-                <tr><td>Setup fee (strategy + onboarding)</td><td>One-off</td><td>$1,200</td></tr>
-                <tr><td>Branding & Corporate Identity</td><td>One-off module</td><td>$1,500</td></tr>
-                <tr><td>Landing / Web</td><td>One-off module</td><td>$1,800</td></tr>
-                <tr><td>Social Media Management</td><td>Monthly retainer</td><td>$900 / month</td></tr>
+                <tr><td>Setup fee</td><td>One-off</td><td>$1,200</td></tr>
+                <tr><td>Branding & Corporate Identity</td><td>One-off</td><td>$1,500</td></tr>
+                <tr><td>Landing / Web</td><td>One-off</td><td>$1,800</td></tr>
+                <tr><td>Social Media Management</td><td>Monthly</td><td>$900 / month</td></tr>
               </tbody>
             </table>
-            <article class="card summary">
-              <p class="label">Summary</p>
-              <h3>Total first month: $5,400</h3>
-              <p class="muted">Includes setup, one-off modules and first monthly cycle.</p>
-            </article>
-          </section>
-
-          <section class="section card" data-section id="terms">
-            <p class="label">Terms</p>
-            <ul>
-              <li>All prices exclude VAT or applicable taxes.</li>
-              <li>50% advance payment for one-off modules.</li>
-              <li>Monthly retainer billed at the start of each cycle.</li>
-              <li>Feedback rounds included: up to 2 per deliverable.</li>
-              <li>Timeline starts once kickoff materials are delivered.</li>
-            </ul>
-          </section>
-
-          <section class="section card" id="next" data-section>
-            <p class="label">Next Steps</p>
-            <ol>
-              <li>Confirm selected modules and start date.</li>
-              <li>Approve commercial terms and first invoice.</li>
-              <li>Kickoff session and access handover.</li>
-            </ol>
+            <div class="summary">
+              <span class="chip chip--accent">Total first month: $5,400</span>
+            </div>
           </section>
         </div>
       </div>
     </main>
 
-    <script src="../../assets/van71-ui.js" defer></script>
+    <script src="../../assets/van71-core.js" defer></script>
     <script src="./app.js" defer></script>
   </body>
 </html>

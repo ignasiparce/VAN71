@@ -4,20 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VAN71</title>
-    <link rel="stylesheet" href="./assets/van71-ui.css" />
+    <link rel="stylesheet" href="./assets/van71-core.css" />
     <style>
-      .hero { margin-bottom: 1.2rem; }
-      .hero p { margin: 0.55rem 0 0; max-width: 52ch; }
-      .clients .card { text-decoration: none; display: block; }
+      .hero {
+        display: grid;
+        gap: 1rem;
+        min-height: min(58vh, 520px);
+        align-content: end;
+      }
+
+      .hero .subtitle {
+        font-size: clamp(1.1rem, 1.2vw + 0.7rem, 1.35rem);
+        color: var(--muted);
+      }
+
+      .clients-card {
+        grid-column: 1 / span 9;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-top: 0.2rem;
+      }
+
+      @media (max-width: 980px) {
+        .clients-card { grid-column: 1 / -1; }
+      }
+
+      @media (max-width: 680px) {
+        .hero { min-height: 0; }
+        .card-top,
+        .card-footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
     </style>
   </head>
   <body>
     <header class="topbar">
       <div class="topbar__inner">
-        <div class="brand">VAN71</div>
+        <p class="brand">VAN71</p>
         <nav aria-label="Principal">
-          <a data-scroll href="#clients">Clients</a>
           <a href="mailto:hello@van71.studio">Contact</a>
+          <a data-scroll href="#clients">Clients</a>
         </nav>
       </div>
     </header>
@@ -25,25 +73,42 @@
     <main>
       <div class="container">
         <section class="section hero" id="top">
-          <p class="label">Hub</p>
           <h1>VAN71</h1>
-          <p class="muted">Creative Strategy, Brand and Communication</p>
-          <p><strong>Contact:</strong> <a href="mailto:hello@van71.studio">hello@van71.studio</a></p>
+          <p class="subtitle">Creative Strategy, Brand and Communication</p>
+          <p class="label">Studio — Barcelona / Remote</p>
         </section>
 
-        <section class="section clients" id="clients" data-section>
-          <p class="label">Clients</p>
+        <hr class="rule" />
+
+        <section class="section" id="clients" data-section>
+          <div class="section-head">
+            <p class="label">Clients</p>
+            <h2>Selected active work</h2>
+            <hr class="rule" />
+          </div>
+
           <div class="grid">
-            <a class="card" style="grid-column: span 6" href="./proposals/rosorta-abogados/">
-              <p class="badge">Proposal</p>
-              <h2 style="margin-top: 0.7rem">Rosorta Abogados</h2>
-              <p class="muted">Open proposal document</p>
-            </a>
+            <article class="card clients-card">
+              <div class="card-top">
+                <h3>Rosorta Abogados</h3>
+                <span class="chip">Legal</span>
+              </div>
+              <div class="chips" aria-label="Servicios">
+                <span class="chip">Strategy</span>
+                <span class="chip">Branding</span>
+                <span class="chip">Social</span>
+                <span class="chip">Web</span>
+              </div>
+              <div class="card-footer">
+                <span class="chip chip--accent">Active proposal</span>
+                <a class="btn" href="./proposals/rosorta-abogados/">Open proposal <span class="arrow">→</span></a>
+              </div>
+            </article>
           </div>
         </section>
       </div>
     </main>
 
-    <script src="./assets/van71-ui.js" defer></script>
+    <script src="./assets/van71-core.js" defer></script>
   </body>
 </html>
