@@ -3,80 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAN71 · Proposals Hub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/hub.css" />
+    <title>VAN71 · Hub</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="topbar" role="banner">
-      <div class="container grid-12 topbar-inner">
-        <a class="brand" href="/" aria-label="VAN71 Home">VAN71</a>
-        <nav aria-label="Primary navigation" class="nav-links">
-          <a href="#proposals">Proposals</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+    <div class="progress-bar" data-progress aria-hidden="true"><span></span></div>
+    <main class="page">
+      <header class="section" id="hub">
+        <p class="label">Hub</p>
+        <h1>VAN71</h1>
+        <p class="hero-copy">Creative Strategy / Brand / Communication</p>
+      </header>
 
-    <main class="container" id="main-content">
-      <section class="hero section" aria-labelledby="hub-title">
-        <p class="kicker">Studio Index</p>
-        <h1 id="hub-title">Proposals Hub</h1>
-        <p class="lede">
-          Hub editorial para revisar propuestas publicadas de VAN71. Explora por cliente y accede a vista web o impresión A4.
-        </p>
-      </section>
-
-      <section class="section" aria-labelledby="search-title">
-        <div class="section-head">
-          <h2 id="search-title">Find by client</h2>
-          <label class="search" for="client-filter">
-            <span class="sr-only">Search proposals by client name</span>
-            <input
-              id="client-filter"
-              type="search"
-              placeholder="Search client…"
-              autocomplete="off"
-            />
-          </label>
+      <section class="section" aria-labelledby="routes-title">
+        <div class="section-header">
+          <p class="label">Navigation</p>
+          <h2 id="routes-title">System entry points</h2>
+          <div class="rule-divider"></div>
         </div>
-      </section>
-
-      <section class="section" id="proposals" aria-labelledby="proposals-title">
-        <div class="section-head">
-          <h2 id="proposals-title">Proposals</h2>
-          <p class="count" id="proposals-count" aria-live="polite"></p>
+        <div class="link-grid">
+          <a class="card" href="./landing/index.html">
+            <p class="label">01</p>
+            <h3>Landing</h3>
+            <p class="small">Posicionamiento principal de VAN71 Studio.</p>
+          </a>
+          <a class="card" href="./proposals/index.html">
+            <p class="label">02</p>
+            <h3>Proposals</h3>
+            <p class="small">Índice de propuestas comerciales y documentos editoriales.</p>
+          </a>
+          <article class="card">
+            <p class="label">03</p>
+            <h3>Future Work</h3>
+            <p class="small">Espacio reservado para nuevas páginas con el mismo sistema visual.</p>
+          </article>
         </div>
-        <div class="cards grid-12" id="proposals-grid"></div>
-      </section>
-
-      <section class="section" id="clients" aria-labelledby="clients-title">
-        <div class="section-head">
-          <h2 id="clients-title">Clients</h2>
-          <p class="count" id="clients-count" aria-live="polite"></p>
-        </div>
-        <div class="cards grid-12" id="clients-grid"></div>
-      </section>
-
-      <section class="section" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
-        <p>
-          Sistema base para propuestas editoriales en web con soporte de impresión A4 y estilo minimal blanco/negro.
-        </p>
-      </section>
-
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <p>Email: hello@van71.studio</p>
       </section>
     </main>
-
-    <script src="./assets/hub.js" defer></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>
